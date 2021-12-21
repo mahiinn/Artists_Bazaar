@@ -1,8 +1,8 @@
 import 'dart:developer';
+import 'package:artists_bazaar/data/services/location.dart';
+import 'package:artists_bazaar/domain/use_cases/location_management.dart';
+import 'package:artists_bazaar/ui/app.dart';
 import 'package:flutter/material.dart';
-import 'package:red_egresados/data/services/location.dart';
-import 'package:red_egresados/domain/use_cases/location_management.dart';
-import 'package:red_egresados/ui/app.dart';
 import 'package:workmanager/workmanager.dart';
 
 import 'domain/models/location.dart';

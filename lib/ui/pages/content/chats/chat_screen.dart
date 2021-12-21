@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/chat.dart';
-import 'package:red_egresados/domain/models/user.dart';
-import 'package:red_egresados/domain/use_cases/chat_management.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/ui/pages/chat/chat_page.dart';
-import 'package:red_egresados/ui/pages/content/chats/widgets/chat_card.dart';
+import 'package:artists_bazaar/domain/models/chat.dart';
+import 'package:artists_bazaar/domain/models/user.dart';
+import 'package:artists_bazaar/domain/use_cases/chat_management.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/ui/pages/chat/chat_page.dart';
+import 'package:artists_bazaar/ui/pages/content/chats/widgets/chat_card.dart';
 
 class UserMessages extends StatefulWidget {
   const UserMessages({Key? key}) : super(key: key);

@@ -1,4 +1,4 @@
-import 'package:red_egresados/domain/repositorires/shared_preferences.dart';
+import 'package:artists_bazaar/domain/repositorires/shared_preferences.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LocalPreferences implements SharedPreferencesInterface {

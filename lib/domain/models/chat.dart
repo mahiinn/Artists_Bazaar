@@ -1,5 +1,5 @@
-import 'package:red_egresados/domain/models/message.dart';
-import 'package:red_egresados/domain/models/user.dart';
+import 'package:artists_bazaar/domain/models/message.dart';
+import 'package:artists_bazaar/domain/models/user.dart';
 
 class Chat {
   ChatUser userA, userB;

@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/user_job.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/jobs_management.dart';
+import 'package:artists_bazaar/domain/models/user_job.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/jobs_management.dart';
 
 class PublishOffer extends StatefulWidget {
   final JobsManager manager;
@@ -20,16 +20,18 @@ class PublishOffer extends StatefulWidget {
 class _State extends State<PublishOffer> {
   late AuthController controller;
   late bool _buttonDisabled;
-  late TextEditingController offerController;
-
+  late TextEditingController actiController;
+  late TextEditingController lugarController;
   @override
   void initState() {
     super.initState();
     controller = Get.find<AuthController>();
     _buttonDisabled = false;
-    offerController = TextEditingController();
+    actiController = TextEditingController();
     // If there is no userJob object, there will be no message, so we use an empty string
-    offerController.text = widget.userJob?.message ?? '';
+    actiController.text = widget.userJob?.message ?? '';
+    lugarController = TextEditingController();
+    lugarController.text = widget.userJob?.message ?? '';
   }
 
   @override
@@ -44,19 +46,32 @@ class _State extends State<PublishOffer> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "$_dialogAction Oferta",
+              "$_dialogAction Nueva Actividad",
               style: Theme.of(context).textTheme.headline2,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: TextField(
-                controller: offerController,
+                controller: actiController,
                 keyboardType: TextInputType.multiline,
                 // dynamic text lines
                 maxLines: null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Oferta',
+                  labelText: 'Actividad',
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              child: TextField(
+                controller: lugarController,
+                keyboardType: TextInputType.multiline,
+                // dynamic text lines
+                maxLines: null,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Lugar',
                 ),
               ),
             ),
@@ -76,7 +91,7 @@ class _State extends State<PublishOffer> {
                                 picUrl: user.photoURL!,
                                 name: user.displayName!,
                                 email: user.email!,
-                                message: offerController.text,
+                                message: actiController.text,
                               );
                               Future task;
                               // If userJob is null, this means that this offer is new; otherwise,
@@ -104,7 +119,7 @@ class _State extends State<PublishOffer> {
 
   @override
   void dispose() {
-    offerController.dispose();
+    actiController.dispose();
     super.dispose();
   }
 }

@@ -1,10 +1,10 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/message.dart';
-import 'package:red_egresados/domain/use_cases/chat_management.dart';
-import 'package:red_egresados/ui/pages/chat/messages/widgets/message.dart';
-import 'package:red_egresados/ui/pages/chat/messages/widgets/option.dart';
+import 'package:artists_bazaar/domain/models/message.dart';
+import 'package:artists_bazaar/domain/use_cases/chat_management.dart';
+import 'package:artists_bazaar/ui/pages/chat/messages/widgets/message.dart';
+import 'package:artists_bazaar/ui/pages/chat/messages/widgets/option.dart';
 
 class ChatView extends StatefulWidget {
   final String? chatReference;

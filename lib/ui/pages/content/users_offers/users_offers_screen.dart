@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/user_job.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/domain/use_cases/jobs_management.dart';
-import 'package:red_egresados/ui/pages/content/users_offers/widgets/new_offer.dart';
-import 'package:red_egresados/ui/pages/content/users_offers/widgets/offer_card.dart';
+import 'package:artists_bazaar/domain/models/user_job.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/connectivity.dart';
+import 'package:artists_bazaar/domain/use_cases/jobs_management.dart';
+import 'package:artists_bazaar/ui/pages/content/users_offers/widgets/new_offer.dart';
+import 'package:artists_bazaar/ui/pages/content/users_offers/widgets/offer_card.dart';
 
 class UsersOffersScreen extends StatefulWidget {
   // UsersOffersScreen empty constructor

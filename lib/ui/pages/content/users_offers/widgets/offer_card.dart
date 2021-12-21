@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:red_egresados/ui/widgets/card.dart';
+import 'package:artists_bazaar/ui/widgets/card.dart';
 
 class UserOfferCard extends StatelessWidget {
   final String title, content, picUrl;

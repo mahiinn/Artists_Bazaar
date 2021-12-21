@@ -1,5 +1,5 @@
+import 'package:artists_bazaar/data/repositories/firestore_database.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:red_egresados/data/repositories/firestore_database.dart';
 
 class FirestoreChat extends FirestoreDatabase {
   // This file refers to the management of the chat previews (records)

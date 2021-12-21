@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/auth_management.dart';
+import 'package:artists_bazaar/domain/use_cases/auth_management.dart';
 
 class AuthController extends GetxController {
   // Observables

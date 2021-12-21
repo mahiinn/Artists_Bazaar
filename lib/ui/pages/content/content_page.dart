@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/ui/pages/content/chats/chat_screen.dart';
-import 'package:red_egresados/ui/pages/content/location/location_screen.dart';
-import 'package:red_egresados/ui/pages/content/public_offers/public_offers_screen.dart';
-import 'package:red_egresados/ui/pages/content/states/states_screen.dart';
-import 'package:red_egresados/ui/pages/content/users_offers/users_offers_screen.dart';
-import 'package:red_egresados/ui/widgets/appbar.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/ui.dart';
+import 'package:artists_bazaar/ui/pages/content/chats/chat_screen.dart';
+//import 'package:artists_bazaar/ui/pages/content/location/location_screen.dart';
+//import 'package:artists_bazaar/ui/pages/content/public_offers/public_offers_screen.dart';
+import 'package:artists_bazaar/ui/pages/content/states/states_screen.dart';
+import 'package:artists_bazaar/ui/pages/content/users_offers/users_offers_screen.dart';
+import 'package:artists_bazaar/ui/widgets/appbar.dart';
 
 class ContentPage extends StatelessWidget {
   const ContentPage({Key? key}) : super(key: key);
@@ -18,13 +18,13 @@ class ContentPage extends StatelessWidget {
       case 1:
         return const UsersOffersScreen();
       case 2:
-        return const PublicOffersScreen();
-      case 3:
-        return LocationScreen();
-      case 4:
         return const UserMessages();
       default:
         return const StatesScreen();
+      //case 4:
+      //  return LocationScreen();
+      //default:
+      //  return conts PublicOffersScreen() ;
     }
   }
 
@@ -41,7 +41,11 @@ class ContentPage extends StatelessWidget {
         context: context,
         controller: controller,
         picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
-        tile: const Text("Red Egresados"),
+        tile: const Text(
+          "Red Profesores de Arte",
+          style: TextStyle(fontSize: 18),
+          textAlign: TextAlign.center,
+        ),
         onSignOff: () {
           authController.manager.signOut();
         },
@@ -60,31 +64,17 @@ class ContentPage extends StatelessWidget {
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.lightbulb_outline_rounded,
+                  Icons.group_outlined,
                   key: Key("statesSection"),
                 ),
-                label: 'Estados',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.group_outlined,
-                  key: Key("socialSection"),
-                ),
-                label: 'Social',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.public_outlined,
-                  key: Key("offersSection"),
-                ),
-                label: 'Verificado',
+                label: 'Posts',
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.place_outlined,
-                  key: Key("locationSection"),
+                  key: Key("socialSection"),
                 ),
-                label: 'Ubicación',
+                label: 'Actividad',
               ),
               BottomNavigationBarItem(
                 icon: Icon(

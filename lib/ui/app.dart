@@ -4,20 +4,20 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/repositories/password_auth.dart';
-import 'package:red_egresados/domain/repositorires/auth.dart';
-import 'package:red_egresados/domain/use_cases/auth_management.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/domain/use_cases/controllers/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/notification.dart';
-import 'package:red_egresados/domain/use_cases/controllers/permissions.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/domain/use_cases/permission_management.dart';
-import 'package:red_egresados/domain/use_cases/theme_management.dart';
-import 'package:red_egresados/ui/pages/authentication/auth_page.dart';
-import 'package:red_egresados/ui/pages/content/content_page.dart';
-import 'package:red_egresados/ui/theme/theme.dart';
+import 'package:artists_bazaar/data/repositories/password_auth.dart';
+import 'package:artists_bazaar/domain/repositorires/auth.dart';
+import 'package:artists_bazaar/domain/use_cases/auth_management.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/connectivity.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/location.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/notification.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/permissions.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/ui.dart';
+import 'package:artists_bazaar/domain/use_cases/permission_management.dart';
+import 'package:artists_bazaar/domain/use_cases/theme_management.dart';
+import 'package:artists_bazaar/ui/pages/authentication/auth_page.dart';
+import 'package:artists_bazaar/ui/pages/content/content_page.dart';
+import 'package:artists_bazaar/ui/theme/theme.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -52,7 +52,7 @@ class _AppState extends State<App> {
         if (snapshot.connectionState == ConnectionState.done) {
           _firebaseStateInit();
           return GetMaterialApp(
-            title: 'Red Egresados MinTIC',
+            title: 'Red Profesores de Arte',
             // Quitamos el banner DEBUG
             debugShowCheckedModeBanner: false,
             // Establecemos el tema claro

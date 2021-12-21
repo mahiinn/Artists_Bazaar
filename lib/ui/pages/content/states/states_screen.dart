@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/user_status.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/domain/use_cases/status_management.dart';
-import 'package:red_egresados/ui/pages/content/states/widgets/new_state.dart';
+import 'package:artists_bazaar/domain/models/user_status.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/connectivity.dart';
+import 'package:artists_bazaar/domain/use_cases/status_management.dart';
+import 'package:artists_bazaar/ui/pages/content/states/widgets/new_state.dart';
 import 'widgets/state_card.dart';
 
 class StatesScreen extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:red_egresados/domain/models/location.dart';
-import 'package:red_egresados/domain/services/misiontic_interface.dart';
+import 'package:artists_bazaar/domain/models/location.dart';
+import 'package:artists_bazaar/domain/services/misiontic_interface.dart';
 import 'package:http/http.dart' as http;
 
 class LocationService implements MisionTicService {

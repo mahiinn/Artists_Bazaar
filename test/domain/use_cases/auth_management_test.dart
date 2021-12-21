@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:red_egresados/data/repositories/password_auth.dart';
-import 'package:red_egresados/domain/use_cases/auth_management.dart';
+import 'package:artists_bazaar/data/repositories/password_auth.dart';
+import 'package:artists_bazaar/domain/use_cases/auth_management.dart';
 
 void main() {
   late AuthManagement management;

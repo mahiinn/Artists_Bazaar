@@ -1,4 +1,4 @@
-import 'package:red_egresados/data/repositories/password_auth.dart';
+import 'package:artists_bazaar/data/repositories/password_auth.dart';
 
 class AuthManagement {
   PasswordAuth auth = PasswordAuth();

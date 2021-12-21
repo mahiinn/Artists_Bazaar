@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:969854742581:android:dcc46872a568934bc3417c",
         "android_client_info": {
-          "package_name": "com.example.red_egresados"
+          "package_name": "com.example.artists_bazaar"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "969854742581-j2hban3a81f9aqebtqmpkqlkiu0kq0r3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.red_egresados",
+            "package_name": "com.example.artists_bazaar",
             "certificate_hash": "eb5b33f3bc8b5a542384f8a756dc9041fdd7d5d1"
           }
         },

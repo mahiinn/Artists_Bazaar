@@ -1,5 +1,5 @@
 import 'package:firebase_database/firebase_database.dart';
-import 'package:red_egresados/data/repositories/realtime_database.dart';
+import 'package:artists_bazaar/data/repositories/realtime_database.dart';
 
 class RealTimeChat extends RealTimeDB {
   // Create a new chat and return its reference

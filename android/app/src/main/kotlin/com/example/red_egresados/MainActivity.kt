@@ -1,4 +1,4 @@
-package com.example.red_egresados
+package com.example.artists_bazaar
 
 import io.flutter.embedding.android.FlutterActivity
 

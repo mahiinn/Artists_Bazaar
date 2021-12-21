@@ -1,6 +1,6 @@
 {
-    "name": "red_egresados",
-    "short_name": "red_egresados",
+    "name": "artists_bazaar",
+    "short_name": "artists_bazaar",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

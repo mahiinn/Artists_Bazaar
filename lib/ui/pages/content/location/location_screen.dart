@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/services/location.dart';
-import 'package:red_egresados/domain/models/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/domain/use_cases/controllers/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/notification.dart';
-import 'package:red_egresados/domain/use_cases/controllers/permissions.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/domain/use_cases/location_management.dart';
+import 'package:artists_bazaar/data/services/location.dart';
+import 'package:artists_bazaar/domain/models/location.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/connectivity.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/location.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/notification.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/permissions.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/ui.dart';
+import 'package:artists_bazaar/domain/use_cases/location_management.dart';
 import 'package:workmanager/workmanager.dart';
 import 'widgets/location_card.dart';
 

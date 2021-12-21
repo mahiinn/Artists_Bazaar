@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:red_egresados/data/repositories/chat/firestore_database.dart';
-import 'package:red_egresados/data/repositories/chat/realtime_database.dart';
-import 'package:red_egresados/domain/models/chat.dart';
-import 'package:red_egresados/domain/models/message.dart';
+import 'package:artists_bazaar/data/repositories/chat/firestore_database.dart';
+import 'package:artists_bazaar/data/repositories/chat/realtime_database.dart';
+import 'package:artists_bazaar/domain/models/chat.dart';
+import 'package:artists_bazaar/domain/models/message.dart';
 
 class ChatManager {
   FirestoreChat firestore = FirestoreChat();

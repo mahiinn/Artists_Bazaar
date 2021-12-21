@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/ui.dart';
 
 class CustomAppBar extends AppBar {
   final BuildContext context;
@@ -26,7 +26,7 @@ class CustomAppBar extends AppBar {
             child: CircleAvatar(
               minRadius: 18.0,
               maxRadius: 18.0,
-              backgroundImage: NetworkImage(picUrl),
+              //backgroundImage: NetworkImage(picUrl),
             ),
           ),
           title: tile,

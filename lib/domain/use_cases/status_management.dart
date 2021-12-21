@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:red_egresados/data/repositories/firestore_database.dart';
-import 'package:red_egresados/domain/models/user_status.dart';
+import 'package:artists_bazaar/data/repositories/firestore_database.dart';
+import 'package:artists_bazaar/domain/models/user_status.dart';
 
 class StatusManager {
   final _database = FirestoreDatabase();

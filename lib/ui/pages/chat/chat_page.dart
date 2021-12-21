@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/chat.dart';
-import 'package:red_egresados/domain/models/message.dart';
-import 'package:red_egresados/domain/models/user.dart';
-import 'package:red_egresados/domain/use_cases/chat_management.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/ui/pages/chat/messages/chat_screen.dart';
-import 'package:red_egresados/ui/widgets/appbar.dart';
+import 'package:artists_bazaar/domain/models/chat.dart';
+import 'package:artists_bazaar/domain/models/message.dart';
+import 'package:artists_bazaar/domain/models/user.dart';
+import 'package:artists_bazaar/domain/use_cases/chat_management.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/authentication.dart';
+import 'package:artists_bazaar/domain/use_cases/controllers/ui.dart';
+import 'package:artists_bazaar/ui/pages/chat/messages/chat_screen.dart';
+import 'package:artists_bazaar/ui/widgets/appbar.dart';
 
 class ChatPage extends StatelessWidget {
   final Chat? chat;
